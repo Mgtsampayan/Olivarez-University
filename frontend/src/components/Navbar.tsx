@@ -15,7 +15,7 @@ const Navbar = () => {
         </div>
         <div className="bg-white rounded-full w-7 h-7 flex items-center justify-center cursor-pointer relative">
           <Image src='/announcement.png' alt='Announcement Icon' width={20} height={20} />
-          <div className="absolute -top-3 -right-3 w-5 h-5 flex items-center justify-center bg-green-500 text-white text-sm">1</div>
+          <div className="absolute -top-3 -right-3 w-5 h-5 flex items-center justify-center bg-green-500 text-white rounded-full text-sm">1</div>
         </div>
         {/* Simplified Version if needed <div className="relative">
           <Image src='/announcement.png' alt='Announcement Icon' width={20} height={20} />

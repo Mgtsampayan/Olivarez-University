@@ -145,29 +145,30 @@ const menuItems: MenuSection[] = [
 
 const Menu: React.FC = () => {
     return (
-        <nav className="mt-5 text-lg">
+        <div className="mt-5 text-lg">
             <div className="lg:flex lg:flex-col">
                 {menuItems.map((section, sectionIndex) => (
                     <div key={sectionIndex} className="mb-6">
                         <h2 className="hidden lg:block text-gray-800 font-bold px-4">{section.title}</h2>
                         <div className="flex flex-row flex-wrap lg:flex-col gap-4 p-4 justify-center sm:justify-center">
                             {section.items.map((item, itemIndex) => (
-                                <Link 
-                                    href={item.href} 
-                                    key={itemIndex} 
-                                    className="flex items-center justify-center lg:justify-start w-16 lg:w-full py-2 px-3 rounded-lg hover:bg-green-100 transition-colors duration-200"
+                                <Link
+                                    href={item.href}
+                                    key={itemIndex}
                                 >
-                                    <div className="flex items-center justify-center w-8 h-8 text-green-700">
-                                        {item.icon}
+                                    <div className="flex items-center justify-center lg:justify-start w-16 lg:w-full py-2 px-3 rounded-lg hover:bg-green-100 transition-colors duration-200">
+                                        <div className="flex items-center justify-center w-8 h-8 text-green-700">
+                                            {item.icon}
+                                        </div>
+                                        <span className="hidden lg:inline ml-3 text-gray-700">{item.label}</span>
                                     </div>
-                                    <span className="hidden lg:inline ml-3 text-gray-700">{item.label}</span>
                                 </Link>
                             ))}
                         </div>
                     </div>
                 ))}
             </div>
-        </nav>
+        </div>
     );
 };
 
