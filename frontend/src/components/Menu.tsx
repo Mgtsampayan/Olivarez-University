@@ -106,8 +106,8 @@ const menuItems: MenuSection[] = [
             },
             {
                 icon: <DollarSign size={25} />,
-                label: "Finance",
-                href: "/finance",
+                label: "Accounting",
+                href: "/accounting",
                 visible: ["admin", "accounting"],
             },
             {

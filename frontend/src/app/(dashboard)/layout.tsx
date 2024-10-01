@@ -3,6 +3,7 @@ import Image from "next/image";
 import OASIS from  "../../../public/OASIS.png";
 import Menu from "@/components/Menu";
 import Navbar from  "@/components/Navbar";
+import AdminPage from "./admin/page";
 
 export default function DashboardLayout({
     // children,
@@ -22,7 +23,7 @@ export default function DashboardLayout({
             {/* Main Content */}
             <div className="w-[90%] md:w-[90%] lg:w-[82%] xl:w-[85%] bg-gray-100"> {/* If need the background use this bg-green-200 */}
                 <Navbar/>
-                Right Side
+                <AdminPage/>
             </div>
         </div>
     );
