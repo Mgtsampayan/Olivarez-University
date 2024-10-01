@@ -11,7 +11,14 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        OlivesColor: ""
+        OlivesColor: "#007c42",
+        SecondaryColor: "#f7f7f7",
+        BlueStudent:"#0000FF",
+        GreenRegistrar:"#008000",
+        RedParent:"#FF0000",
+        YellowTeacher:"#a5c90f",
+        OrangeAccounting:"#ffb366",
+        PurpleAnother:"#800080",
       },
     },
   },
