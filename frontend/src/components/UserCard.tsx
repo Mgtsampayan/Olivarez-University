@@ -21,12 +21,12 @@ const UserCard = ({ type }: { type: string }) => {
     return (
         <div className={`${getBackgroundColor()} rounded-xl p-3 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow duration-300`}>
             <div className="flex justify-between items-center text-xs text-gray-600 mb-2">
-                <span className="text-[12px] bg-white rounded-lg py-1 text-green-600">2024/08</span>
+                <span className="text-[12px] bg-white rounded-md py-1 text-black">08-2024</span>
                 <Image src="/more.png" alt="" width={12} height={12} />
             </div>
             <div className="text-center">
-                <h1 className="text-xl font-semibold mb-1">123</h1>
-                <h2 className="text-sm font-extrabold capitalize truncate">{type}</h2>
+                <h1 className="text-lg font-bold mb-1">123</h1>
+                <h2 className="text-[16px] font-extrabold capitalize truncate">{type}</h2>
             </div>
         </div>
     )
