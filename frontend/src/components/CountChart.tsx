@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-import { RadialBarChart, RadialBar, Legend, ResponsiveContainer } from 'recharts';
+import { RadialBarChart, RadialBar, ResponsiveContainer } from 'recharts';
 
 const data = [
     {
@@ -10,12 +10,12 @@ const data = [
     },
     {
         name: 'Girls',
-        count: 1500,
+        count: 2250,
         fill: '#ed47a8',
     },
     {
         name: 'Boys',
-        count: 1500,
+        count: 2125,
         fill: '#00a2fb',
     },
     
