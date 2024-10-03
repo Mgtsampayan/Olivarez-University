@@ -1,30 +1,22 @@
-"use client"
+"use client";
 import Image from 'next/image';
 import { RadialBarChart, RadialBar, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
-    // {
-    //     name: 'Girls',
-    //     count: '50',
-    //     uv: '8.22',
-    //     fill: '#a5c90f',
-    // },
     {
-        name: 'Boys',
-        count: '4567',
-        fill: '#FFA500',
-    },
-    {
-        name: 'Other',
-        count: '123',
-        uv: '6.54',
-        fill: '#800080',
+        name: 'Total',
+        count: 3000,
+        fill: "white",
     },
     {
         name: 'Girls',
-        count: '50',
-        uv: '1234',
+        count: 1500,
         fill: '#a5c90f',
+    },
+    {
+        name: 'Boys',
+        count: 1500,
+        fill: '#FFA500',
     },
     
 ];
@@ -40,13 +32,12 @@ const CountChart = () => {
             {/* Chart */}
             <div className="w-full h-[75%]">
                 <ResponsiveContainer width="100%" height="100%">
-                    <RadialBarChart cx="50%" cy="50%" innerRadius="10%" outerRadius="80%" barSize={10} data={data}>
+                    <RadialBarChart cx="50%" cy="50%" innerRadius="40%" outerRadius="100%" barSize={32} data={data}>
                         <RadialBar
-                            label={{ position: 'insideStart', fill: '#fff' }}
                             background
-                            dataKey="uv"
+                            dataKey="count"
                         />
-                        <Legend iconSize={10} layout="vertical" verticalAlign="middle" />
+                        {/* <Legend iconSize={10} layout="vertical" verticalAlign="middle" /> */}
                     </RadialBarChart>
                 </ResponsiveContainer>
             </div>
@@ -55,13 +46,13 @@ const CountChart = () => {
                 {/* Boys */}
                 <div className="flex flex-col gap-1">
                     <div className="w-5 h-5 bg-OrangeStudent rounded-full" />
-                    <h1 className="font-bold">1,234</h1>
+                    <h1 className="font-bold">1,500</h1>
                     <h1 className="text-sm text-gray-400">Boys (55%)</h1>
                 </div>
                 {/* Girls */}
                 <div className="flex flex-col gap-1">
                     <div className="w-5 h-5 bg-YellowTeacher rounded-full" />
-                    <h1 className="font-bold">1,234</h1>
+                    <h1 className="font-bold">1,500</h1>
                     <h1 className="text-sm text-gray-400">Girls (45%)</h1>
                 </div>
             </div>
