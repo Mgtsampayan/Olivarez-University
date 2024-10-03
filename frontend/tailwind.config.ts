@@ -20,6 +20,8 @@ const config: Config = {
         OrangeAccounting:"#ffb366",
         OrangeStudent: "#FFA500",
         PurpleAnother:"#800080",
+        MaleGenderColor: "#00a2fb",
+        FemaleGenderColor: "#ed47a8",
       },
     },
   },

@@ -11,12 +11,12 @@ const data = [
     {
         name: 'Girls',
         count: 1500,
-        fill: '#a5c90f',
+        fill: '#ed47a8',
     },
     {
         name: 'Boys',
         count: 1500,
-        fill: '#FFA500',
+        fill: '#00a2fb',
     },
     
 ];
@@ -30,7 +30,7 @@ const CountChart = () => {
                 <Image src="/moreDark.png" alt="" width={20} height={20} />
             </div>
             {/* Chart */}
-            <div className="w-full h-[75%]">
+            <div className="relative w-full h-[75%]">
                 <ResponsiveContainer width="100%" height="100%">
                     <RadialBarChart cx="50%" cy="50%" innerRadius="40%" outerRadius="100%" barSize={32} data={data}>
                         <RadialBar
@@ -40,18 +40,19 @@ const CountChart = () => {
                         {/* <Legend iconSize={10} layout="vertical" verticalAlign="middle" /> */}
                     </RadialBarChart>
                 </ResponsiveContainer>
+                <Image src="/FemaleMale.png" alt="" width={50} height={50} className='absolute rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
             </div>
             {/* Button */}
             <div className="flex justify-center gap-16">
                 {/* Boys */}
                 <div className="flex flex-col gap-1">
-                    <div className="w-5 h-5 bg-OrangeStudent rounded-full" />
+                    <div className="w-5 h-5 bg-MaleGenderColor rounded-full" />
                     <h1 className="font-bold">1,500</h1>
                     <h1 className="text-sm text-gray-400">Boys (55%)</h1>
                 </div>
                 {/* Girls */}
                 <div className="flex flex-col gap-1">
-                    <div className="w-5 h-5 bg-YellowTeacher rounded-full" />
+                    <div className="w-5 h-5 bg-FemaleGenderColor rounded-full" />
                     <h1 className="font-bold">1,500</h1>
                     <h1 className="text-sm text-gray-400">Girls (45%)</h1>
                 </div>
