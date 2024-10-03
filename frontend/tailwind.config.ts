@@ -18,6 +18,7 @@ const config: Config = {
         RedParent:"#FF0000",
         YellowTeacher:"#a5c90f",
         OrangeAccounting:"#ffb366",
+        OrangeStudent: "#FFA500",
         PurpleAnother:"#800080",
       },
     },
